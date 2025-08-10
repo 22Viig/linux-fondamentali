@@ -4,3 +4,9 @@
 
 layout: home
 ---
+
+<ul>
+  {% for pagina in site.pagine %}
+    <li><a href="{{site.baseurl}}{{pagina.url }}">{{ pagina.title }}</a></li>
+  {% endfor %}
+</ul>
