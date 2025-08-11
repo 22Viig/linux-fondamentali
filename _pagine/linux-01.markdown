@@ -1,15 +1,16 @@
 ---
 layout: page
-title: I processi
-permalink: /01-processi/
+title: I fondamentali di Linux - Part. 1
+args: (processi, automazione, pacchetti e log)
+permalink: /linux-01/
 
 ---
-- [1. Introduzione](#1-introduzione)
+- [1. Processi](#1-processi)
 - [2. Automazione](#2-automazione)
 - [3. Pacchetti](#3-pacchetti)
 - [4. Log](#4-log)
 
-## 1 Introduzione
+## 1 Processi
 I processi sono i programmi in esecuzione sul computer. Sono gestiti dal kernel, dove a ogni processo è associato un ID, noto anche come PID.
 
 # 1.1 Visualizzazione dei processi
