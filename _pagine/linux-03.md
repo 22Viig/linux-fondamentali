@@ -1,8 +1,8 @@
 ---
 layout: page
-title: I fondamentali di Linux - Part. 1
-args: (processi, automazione, pacchetti e log)
-permalink: /linux-01/
+title: I fondamentali di Linux - Part. 3
+args: (processi, automazione, pacchetti e log, scambio dei file)
+permalink: /linux-03/
 
 ---
 - [1. Processi](#1-processi)
@@ -117,5 +117,31 @@ Situati nella directory /var/log, questi file e cartelle contengono informazioni
 Questi servizi e log sono un ottimo modo per monitorare lo stato di salute del sistema e proteggerlo. Non solo, i log di servizi come un server web contengono informazioni su ogni singola richiesta, consentendo a sviluppatori o amministratori di diagnosticare problemi di prestazioni o indagare sull'attività di un intruso (vedi access.log e error.log).
 
 Naturalmente, esistono altri registri che memorizzano informazioni su come funziona il sistema operativo e sulle azioni eseguite dagli utenti, come i tentativi di autenticazione.
+
+- [1. Trasferimento file](#scambio-file-wget-scp-httpd)
+
+
+## 5 Scambio file (wget, scp, httpd)
+
+### 5.1 Scaricamento di file (Wget)
+
+Questo comando ci permette di scaricare file dal web tramite HTTP, come se stessimo accedendo al file tramite il nostro browser. Dobbiamo semplicemente fornire l'indirizzo della risorsa che desideriamo scaricare.
+
+### 5.2 Trasferimento di file dal tuo host - SCP (SSH)
+
+Secure Copy, o SCP, è proprio questo: un metodo per copiare file in modo sicuro. A differenza del normale comando cp, questo comando consente di trasferire file tra due computer utilizzando il protocollo SSH per fornire sia autenticazione che crittografia.
+
+Lavorando su un modello di ORIGINE e DESTINAZIONE, SCP consente di:
+
+- Copia file e directory dal tuo sistema attuale a un sistema remoto
+- Copia file e directory da un sistema remoto al tuo sistema attuale
+
+A patto di conoscere i nomi utente e le password di un utente sul sistema corrente e di un utente sul sistema remoto. 
+
+### 5.3 Fornitura di file dal tuo host - WEB
+
+Le macchine Ubuntu sono preinstallate con Python3. Python fornisce un modulo leggero e facile da usare chiamato "HTTPServer". Questo modulo trasforma il computer in un server web rapido e semplice da usare, che può essere utilizzato per gestire i propri file, che possono poi essere scaricati da un altro computer tramite comandi come ***`curl`*** e ***`wget`***. 
+
+Il modulo "HTTPServer" di Python3 servirà i file nella directory in cui si esegue il comando, ma è possibile modificarlo specificando le opzioni disponibili nelle pagine del manuale. Semplicemente, tutto ciò che dobbiamo fare è eseguire il comando python3 -m  http.server nel terminale per avviare il modulo.
 
 
