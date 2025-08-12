@@ -13,7 +13,7 @@ permalink: /linux-01/
 - [5. Operatori](#5-operatori)
 
 
-## 1. I primi comandi
+## 1 I primi comandi
 
 Il comando ***`pwd`*** (pwd sigla sta per print working directory) ci mostra il percorso della cartella nella quale ci troviamo.
 
@@ -23,7 +23,7 @@ Per visualizzare i contenuti di una cartella (altre cartelle o file) usiamo il c
 
 É importante sapere che il comando ***`man [comando]`***, ad esempio ***`man ls`***, è possibile visualizzare il manuale con tutte le informazioni che riguardano quel comando.
 
-## 2. Argomenti
+## 2 Argomenti
 
 La maggior parte dei comandi consente di specificare argomenti. Questi argomenti sono identificati da un trattino e da una parola chiave specifica, nota come flag o switch.
 
